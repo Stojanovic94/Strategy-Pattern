@@ -26,7 +26,7 @@ class TaskGUI:
         self.taskTable.heading("Status", text="Status")
         self.taskTable.pack(pady=5)
 
-        # Filter statusa
+        # Filter status
         self.filterMenu = ttk.Combobox(root, values=["u toku", "završeno", "na čekanju"])
         self.filterMenu.bind("<<ComboboxSelected>>", self.filterTasks)
         self.filterMenu.pack(pady=5)
